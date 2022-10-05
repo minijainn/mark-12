@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+.nav-unordered-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+  cursor: pointer;
+  width: 300px;
+  text-align: center;
+}
+
+li {
+  padding: 8px;
+  list-style: none;
+  border-radius: 16px;
+  color: white;
+  background-color: indigo;
+}
+
+.heading {
+  color: white;
+  margin: 28px;
+  font-size: 28px;
+  text-align: center;
+}
+
+span {
+  color: white;
+  font-size: 18px;
+}
+
+.input-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+input[type="number"] {
+  background-color: indigo;
+  color: white;
+  width: 100px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  display: block;
+  margin: 50px auto;
+  background-color: white;
+  padding: 16px;
+  font-size: 22px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#dynamic-text {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.content-container {
+  margin-top: 200px;
+}
+
+.question {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin: 16px;
+}
+
+.questionInput {
+  color: white;
+  font-size: 16px;
+}
+
+.options-container {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}

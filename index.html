@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <nav class="nav-container">
+        <ul class="nav-unordered-list">
+          <a href="/"><li>Area</li></a>
+          <a href="/src/isTriangle.html"><li>Is Traingle?</li></a>
+          <a href="/src/calculateHypotenuse.html"
+            ><li>Calculate Hypotenuse</li></a
+          >
+          <a href="/src/triangleQuiz.html"><li>Triangle Quiz</li></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="content-container">
+      <p class="heading">Check the area of a Triangle</p>
+      <div class="input-container">
+        <div>
+          <span>Base(in cm)</span>
+          <input type="number" id="base" />
+        </div>
+        <div>
+          <span>Height(in cm)</span>
+          <input type="number" id="height" />
+        </div>
+      </div>
+      <button id="calculate">Calculate</button>
+      <p id="dynamic-text"></p>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

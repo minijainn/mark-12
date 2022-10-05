@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <nav class="nav-container">
+        <ul class="nav-unordered-list">
+          <a href="/"><li>Area</li></a>
+          <a href="/src/isTriangle.html"><li>Is Traingle?</li></a>
+          <a href="/src/calculateHypotenuse.html"
+            ><li>Calculate Hypotenuse</li></a
+          >
+          <a href="/src/triangleQuiz.html"><li>Triangle Quiz</li></a>
+        </ul>
+      </nav>
+    </div>
+    <div class="triangle-quiz">
+      <p class="heading">Triangle Quiz</p>
+      <div>
+        <p class="question">
+          What is the third angle for the traingle where angle1=45° and
+          angle2=45°?
+        </p>
+        <div class="options-container">
+          <div>
+            <input
+              type="radio"
+              id="question1-option1"
+              name="question1"
+              value="45"
+              class="option"
+            />
+            <label for="question1-option1" class="questionInput">45°</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question1-option2"
+              name="question1"
+              value="90"
+              class="option"
+            />
+            <label for="question1-option2" class="questionInput">90°</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question1-option3"
+              name="question1"
+              value="60"
+              class="option"
+            />
+            <label for="question1-option3" class="questionInput">60°</label>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="question">
+          If a triangle has an angle of 90 degrees, what is it called?
+        </p>
+        <div class="options-container">
+          <div>
+            <input
+              type="radio"
+              id="question2-option1"
+              name="question2"
+              value="Acute"
+              class="option"
+            />
+            <label for="question2-option1" class="questionInput">Acute</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question2-option2"
+              name="question2"
+              value="Obtuse"
+              class="option"
+            />
+            <label for="question2-option2" class="questionInput">Obtuse</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question2-option3"
+              name="question2"
+              value="Right angle"
+              class="option"
+            />
+            <label for="question2-option3" class="questionInput"
+              >Right angle</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- question3 -->
+      <div>
+        <p class="question">
+          A traingle can have-
+        </p>
+        <div class="options-container">
+          <div>
+            <input
+              type="radio"
+              id="question3-option1"
+              name="question3"
+              value="one right angle"
+              class="option"
+            />
+            <label for="question3-option1" class="questionInput"
+              >one right angle</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question3-option2"
+              name="question3"
+              value="two right angle"
+              class="option"
+            />
+            <label for="question3-option2" class="questionInput"
+              >two right angle</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- question4 -->
+      <div>
+        <p class="question">
+          Which of the following can form a right angled triangle?
+        </p>
+        <div class="options-container">
+          <div>
+            <input
+              type="radio"
+              id="question4-option1"
+              name="question4"
+              value="14,15,16"
+              class="option"
+            />
+            <label for="question4-option1" class="questionInput"
+              >14,15,16</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question4-option2"
+              name="question4"
+              value="12,16,20"
+              class="option"
+            />
+            <label for="question4-option2" class="questionInput"
+              >12,16,20</label
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- question5 -->
+      <div>
+        <p class="question">
+          What do you call a triangle whose sides are all equal?
+        </p>
+        <div class="options-container">
+          <div>
+            <input
+              type="radio"
+              id="question5-option1"
+              name="question5"
+              value="Equilateral"
+              class="option"
+            />
+            <label for="question5-option1" class="questionInput"
+              >Equilateral</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question5-option2"
+              name="question5"
+              value="Isoceles"
+              class="option"
+            />
+            <label for="question5-option2" class="questionInput"
+              >Isoceles</label
+            >
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="question5-option3"
+              name="question5"
+              value="Scalene"
+              class="option"
+            />
+            <label for="question5-option3" class="questionInput">Scalene</label>
+          </div>
+        </div>
+      </div>
+      <button id="submit">Submit</button>
+      <p id="dynamic-text"></p>
+    </div>
+
+    <script src="./triangleQuiz.js"></script>
+  </body>
+</html>

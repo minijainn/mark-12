@@ -1,2 +1,4 @@
 # mark-12
-Created with CodeSandbox
+have questions with triangles?...
+area/hypotenuse/side
+worry not this tool you can check everything

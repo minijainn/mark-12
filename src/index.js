@@ -8,5 +8,9 @@ calculate.addEventListener("click", area);
 function area() {
   const baseInput = parseFloat(base.value);
   const heightInput = parseFloat(height.value);
-  dynamicText.innerText = "The area is:" + (baseInput * heightInput) / 2;
+  if (baseInput < 0 && heightInput < 0) {
+    alert("Base and Height can't be negative");
+  } else {
+    dynamicText.innerText = "The area is:" + (baseInput * heightInput) / 2;
+  }
 }

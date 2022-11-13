@@ -10,7 +10,9 @@ function checkFunc() {
   const angle1Input = parseInt(angle1.value);
   const angle2Input = parseInt(angle2.value);
   const angle3Input = parseInt(angle3.value);
-  if (angle1Input + angle2Input + angle3Input === 180) {
+  if (angle1Input < 0 && angle2Input < 0 && angle3Input < 0) {
+    alert("angles can't be negative");
+  } else if (angle1Input + angle2Input + angle3Input === 180) {
     dynamicTextIsTriangle.innerText = "Yes it forms a triangle";
   } else {
     dynamicTextIsTriangle.innerText = "It does not form a triangle";

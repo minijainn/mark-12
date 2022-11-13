@@ -8,7 +8,11 @@ calculate.addEventListener("click", area);
 function area() {
   const side1Input = parseFloat(side1.value);
   const side2Input = parseFloat(side2.value);
-  dynamicText.innerText =
-    "The length of hypotenuse is:" +
-    Math.sqrt(Math.pow(side1Input, 2) + Math.pow(side2Input, 2));
+  if (side1Input < 0 && side2Input < 0) {
+    alert("sides can't be negative");
+  } else {
+    dynamicText.innerText =
+      "The length of hypotenuse is:" +
+      Math.sqrt(Math.pow(side1Input, 2) + Math.pow(side2Input, 2));
+  }
 }
